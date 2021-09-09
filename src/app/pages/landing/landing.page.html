@@ -1,0 +1,55 @@
+<ion-content class="background" [fullscreen]='true'>
+
+    <ion-slide>
+        <div class="contaier-land">
+            <div>
+
+              
+                <h6 class="txt2">
+                  wired Health
+                </h6>
+
+            </div>
+
+            <ion-grid>
+
+                <ion-row>
+                    <ion-col>
+
+                        <ion-button
+                            fill="solid"
+                            shape="round"
+                            expand="full"
+                           color="primary"
+                            (click)="registerAction()">
+                           Sign up
+
+                            
+                        </ion-button>
+
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col>
+                        <h5 style="color: aliceblue; font-size: small;">Already Have An Account?</h5>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-button
+                            fill="solid"
+                            (click)="loginAction()"
+                            shape="round"
+                            expand="full"
+                            color="danger">
+                            Log in
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+
+            </ion-grid>
+        </div>
+    </ion-slide>
+
+</ion-content>

@@ -1,0 +1,67 @@
+<ion-content class="background">
+
+    <ion-slide>
+
+   
+            <ion-grid>
+
+                <ion-row>
+                    <div class="container-title">
+
+                        <h4>wired Health</h4>
+                   
+
+                </div>
+                </ion-row>
+  
+
+               
+                <ion-row>
+                    <div class="container-register">
+
+                        <h4 style="color: black;">Login</h4>
+                    <ion-col>
+                      <form [formGroup]="loginForm"  (ngSubmit)="goHome($event)">
+  
+                          <ion-item>
+                            
+                              <ion-label position="floating">Username</ion-label>
+                              <ion-input name="username"
+                              formControlName="email" type="email" required placeholder="Email"></ion-input>
+                          </ion-item>
+                          <br/>
+                          <ion-item>
+                            <ion-label position="floating">Password</ion-label>
+                          
+                              <ion-input name="username"
+                              formControlName="password" type="password" required placeholder="Password"></ion-input>
+                          </ion-item>
+  
+  
+                          <br/>
+  
+                          <ion-button
+                          fill="solid"
+                          type='submit'
+                          shape="round"
+                          expand="full"
+                          color='primary'>
+                          Login
+                      </ion-button>
+                      </form>
+                    </ion-col>
+
+                        <ion-button
+                        fill="solid"
+                        (click)="loginAction()"
+                        shape="round"
+                        color='danger' slot="end">
+                        Sign up
+                    </ion-button>
+                </div>
+                </ion-row>
+  
+            </ion-grid>
+     
+    </ion-slide>
+</ion-content>
